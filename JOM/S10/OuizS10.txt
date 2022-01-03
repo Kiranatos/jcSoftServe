@@ -1,0 +1,140 @@
+10. JDBC
+
+******************************[01]******************************
+Please, fill in the gap:
+______ is an open-source DBMS product that runs on UNIX, Linux and Windows
+a. JSP/SQL
+b. Sun ACCESS
+[CORRECT]c. MySQL
+d. JDBC/SQL
+******************************[02]******************************
+What does setAutoCommit(false) do?
+a. never commits transaction
+b. explicitly commits transaction
+c. commits transaction after each query
+[CORRECT]d. does not commit transaction automatically after each query
+******************************[03]******************************
+Which of the following is method of JDBC batch process?
+a. setBatch()
+b. removeBatch()
+c. deleteBatch()
+[CORRECT]d. addBatch()
+******************************[04]******************************
+Which class or interface contains the transaction control methods setAutoCommit, commit and rollback?
+a. ResultSet
+b. Statement
+[CORRECT]c. Connection
+******************************[05]******************************
+Which of the following executes the any kind of SQL statement?
+[CORRECT]a. execute()
+b. executeQuery()
+c. executeUpdate()
+d. None of the above
+******************************[06]******************************
+This method is used for retrieving a string value (SQL type varchar) and assigning it into java String object.
+[CORRECT]a. getString()
+b. getVarchar()
+c. getObject()
+******************************[07]******************************
+Which of the following interfaces provide getMetaData() method?
+    1. Connection 
+    2. Statement
+    3. ResultSet
+Select one:
+
+[CORRECT]a. Both 1 & 3
+b. Only 1
+c. All of them   
+d. Both 1 & 2
+******************************[08]******************************
+This method is used to execute any SQL statement with a SELECT clause, that returns the result of the query as a result set.
+Select one:
+
+[CORRECT]executeQuery()
+executeUpdate()
+execute()
+******************************[09]******************************
+This method can be used to execute INSERT, DELETE, UPDATE, and other SQL DDL such as CREATE Table, DROP Table
+Select one or more:
+
+[CORRECT]execute()
+[CORRECT]executeUpdate()
+executeQuery()
+******************************[10]******************************
+Please, select a method that is used for retrieving the value from the current row as object.
+Select one:
+
+getRow()
+getString()
+[CORRECT]getObject()
+******************************[11]******************************
+Which character is used to represent an input parameter in a CallableStatement?
+Select one:
+
+a. *
+b. #
+[CORRECT]c. ?
+d. %
+******************************[12]******************************
+Which type of Statement can execute parameterized queries?
+Select one:
+
+a. ParameterizedStatement and CallableStatement
+[CORRECT]b. PreparedStatement
+c. ParameterizedStatement
+d. All kinds of Statements (i.e. which implement a sub interface of Statement)
+******************************[13]******************************
+If one intends to work with a ResultSet, which of these PreparedStatement methods will not work?
+Select one:
+
+a. executeQuery()
+b. execute()
+[CORRECT]c. executeUpdate()
+******************************[14]******************************
+Which one of the following will not get the data from the first column of ResultSet rs, returned from the following SQL statement: 
+SELECT name, rank, SerialNo from employee 
+Select one:
+
+rs.getString("name")
+rs.getString(1)
+[CORRECT]rs.getString(0)
+******************************[15]******************************
+It refers to the ability to move backward as well as forward through a result set.
+Select one:
+
+[CORRECT]Scrollable
+Holdable
+Updatable
+******************************[16]******************************
+In order to prevent SQL injection, queries should be executed using ---?
+Select one:
+
+a. CallableStatement
+b. SafetyStatement
+c. Statement
+[CORRECT]d. PreparedStatement 
+******************************[17]******************************
+Only one Statement object can be created using a Connection?
+Select one:
+
+True
+[CORRECT]False 
+******************************[18]******************************
+JDBC is a Java API that is used to connect and execute query to the database 
+Select one:
+
+[CORRECT]True
+False 
+******************************[19]******************************
+The performance of the application will be faster if you use PreparedStatement interface because query is compiled only once.
+Select one:
+
+[CORRECT]True
+False 
+******************************[20]******************************
+ResultSet does not require an active connection i.e. after the ResultSet is obtained, Connection can be closed?
+Select one:
+
+True
+[CORRECT]False 
+****************************************************************

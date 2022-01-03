@@ -1,0 +1,80 @@
+17. Spring. Exception Handling.
+
+******************************[01]******************************
+DefaultHandlerExceptionResolver is used to resolve standard Spring exceptions to their corresponding HTTP Status Codes, namely Client error – 4xx and Server error – 5xx status codes.
+Select one:
+
+[CORRECT]True
+False 
+******************************[02]******************************
+In custom exception resolver we don`t have access to the request.
+Select one:
+
+True
+[CORRECT]False 
+******************************[03]******************************
+What is annotation available on custom exceptions map these exceptions to HTTP status codes.
+Select one:
+
+[CORRECT]a. @Response Status
+b. @ExceptionHandler
+c. @ControllerAdvice
+******************************[04]******************************
+What is the base class for DefaultHandlerExceptionResolver and ResponseStatusExceptionResolver. Select one:
+
+a. HandlerExceptionResolver
+[CORRECT]b. AbstractHandlerExceptionResolver
+c. SimpleMappingExceptionResolver
+d. AbstractHandlerMethodExceptionResolver
+******************************[05]******************************
+When is @ExceptionHandler annotated method activate ?
+public class FooController{
+	//...
+	@ExceptionHandler({ CustomException1.class, CustomException2.class })
+	public void handleException() { /* ... */ }
+}
+Select one:
+
+[CORRECT]a. Only for particular controller
+b. Globally for the entire application 
+c. For all controllers in package
+d. Never
+******************************[06]******************************
+What exeption is HTTP Status Code 400?
+Select one or more:
+
+[CORRECT]a. HttpMessageNotReadebleException
+[CORRECT]b. BindException
+c. ConversionNotSupportedExeption
+d. HttpMediaTypeNotAcceptableExeption
+******************************[07]******************************
+What need to implement custom exception resolver ?
+Select one:
+
+[CORRECT]a. Extend by AbstractHandlerExceptionResolver 
+b. Extend by ExceptionResolver 
+c. Annotate class @ControllerAdvice
+d. Annotate class @ExceptionHandler
+******************************[08]******************************
+Match Exception and HTTP Status Code
+
+MissingServletRequestPartExeption = 400 (Bad Request), 
+NoSuchRequestHandlingMethodException = 404 (Not Found), 
+HttpMediaTypeNotSupportedException = 415 (Unsupported Media type), 
+HttpMessageNotWritableException = 500 (Internal Server Error)
+******************************[09]******************************
+The @ControllerAdvice annotation allows us to ...
+Select one:
+
+[CORRECT]a. Consolidate our multiple, scattered @ExceptionHandlers from before into a single, global error handling component
+b. Define a method to handle exceptions
+c. Available on custom exceptions and to map these exceptions to HTTP status codes
+******************************[10]******************************
+What can set "respons body" by implement handling Exception  ?
+Select one or more:
+
+a. DefaultHandlerExceptionResolver
+[CORRECT]b. @ExceptionHandler 
+[CORRECT]c. CustomHandlerExceptionResolver
+d. @ResponseStatus
+****************************************************************

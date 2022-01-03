@@ -1,0 +1,155 @@
+19. Rest API Serialization. JSON
+
+******************************[01]******************************
+Which of the following is not a valid HTTP methods used in RESTful web services?
+Select one:
+
+[CORRECT]a. DATE
+b. OPTIONS
+c. DELETE
+d. POST
+******************************[02]******************************
+Which of the following component of HTTP request is used to indicate HTTP version?
+Select one:
+
+a. VERB
+b. Request Header
+c. URI
+[CORRECT]d. HTTP Version
+******************************[03]******************************
+Which of the following HTTP method should be used to fetch resource using RESTful web service?
+Select one:
+
+[CORRECT]a. GET
+b. PUT
+c. OPTIONS
+d. DELETE
+******************************[04]******************************
+Which of the following HTTP Status code means BAD REQUEST, states that invalid input is provided e.g. validation error, missing data?
+Select one:
+
+a. 401
+b. 409
+c. 404
+[CORRECT]d. 400
+******************************[05]******************************
+Which of the following HTTP Status code means INTERNAL SERVER ERROR, states that server has thrown some exception while executing the method?
+Select one:
+
+a. 404
+b. 409
+c. 401
+[CORRECT]d. 500
+******************************[06]******************************
+A web service is a collection of open protocols and standards used for exchanging data between applications or systems.
+Select one:
+
+a. false
+[CORRECT]b. true
+******************************[07]******************************
+POST opearations should be idempotent.
+Select one:
+
+a. true
+[CORRECT]b. false
+******************************[08]******************************
+What is REST?
+Select one:
+
+[CORRECT]a. A software architectural style used to develop web services.
+b. A Linux library used to expose APIs.
+c. A code style standard for APIs.
+d. Any JSON API is REST.
+******************************[09]******************************
+REST API services use for communication only HTTP protocol
+Select one:
+
+[CORRECT]a. true
+b. false
+******************************[10]******************************
+Which of the following component of HTTP response contains metadata for the HTTP Response message as key-value pairs?
+Select one:
+
+a. HTTP Version
+[CORRECT]b. Response Header
+c. Status/Response Code
+d. Response Body
+******************************[11]******************************
+XML tag which represents information related to a REST service’s request.
+Select one:
+
+a. Result
+b. None of the mentioned
+c. Title
+[CORRECT]d. All of the mentioned
+******************************[12]******************************
+Publishing an application’s data as a REST service requires.
+Select one:
+
+a. @RequestMapping
+b. None of the mentioned
+c. @PathVariable
+[CORRECT]d. All of the mentioned
+******************************[13]******************************
+RESTful web services?
+Select one:
+
+a. Defines its own security.
+b. Both of the above
+[CORRECT]c. Inherits security measures from the underlying transport.
+d. None of the above
+******************************[14]******************************
+What is/are the advantages of RESTful Web Services?
+Select one:
+
+[CORRECT]a. All of the above
+b. Permits different data format
+c. REST can use SOAP
+d. Language and Platform independent
+******************************[15]******************************
+Which of the following is true about REST?
+Select one:
+
+a. REST was first introduced by Roy Fielding in 2000.
+[CORRECT]b. All of the above
+c. REST is web standards based architecture and uses HTTP Protocol for data communication.
+d. It revolves around resource where every component is a resource and a resource is accessed by a common interface using HTTP standard methods.
+******************************[16]******************************
+Which of the following is correct about messaging in RESTful web services?
+Select one:
+
+[CORRECT]a. Both of the above.
+b. These messages contain message data and metadata i.e. information about message itself.
+c. A client sends a message in form of a HTTP Request and server responds in form of a HTTP Response.
+d. None of the above.
+******************************[17]******************************
+Which of the following component of HTTP response contains response message content or Resource representation?
+Select one:
+
+a. Response Header
+b. Status/Response Code
+[CORRECT]c. Response Body
+d. HTTP Version
+******************************[18]******************************
+Which of the following HTTP method should be read only in nature?
+Select one:
+
+[CORRECT]a. GET
+b. POST
+c. PUT
+d. DELETE
+******************************[19]******************************
+Which of the following HTTP Status code means NOT FOUND, states that method is not available?
+Select one:
+
+a. 401
+[CORRECT]b. 404
+c. 400
+d. 409
+******************************[20]******************************
+Web services can treat each method request independently.
+Select one:
+
+[CORRECT]a. true
+b. false
+****************************************************************

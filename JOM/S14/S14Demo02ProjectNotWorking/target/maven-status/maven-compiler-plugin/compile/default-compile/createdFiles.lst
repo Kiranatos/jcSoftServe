@@ -1,0 +1,5 @@
+net\kiranatos\Author.class
+net\kiranatos\AuthorRepository.class
+net\kiranatos\Book.class
+net\kiranatos\BookRepository.class
+net\kiranatos\SpringDataJpaExamplesApplication.class

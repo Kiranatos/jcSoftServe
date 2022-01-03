@@ -1,0 +1,80 @@
+6. Functional Interfaces. Lambda
+
+******************************[01]******************************
+A functional interface is an interface that contains only one abstract method. 
+******************************[02]******************************
+What is true about functional interface?
+Select one or more:
+
+[CORRECT]a. Functional interface has only a single method that needs to be implemented.
+[CORRECT]b. Lambda expression implicitly implements the abstract method of the functional interface.
+[CORRECT]c. If a lambda expression is provided then the method name should not be provided.
+d. It has multiple methods that needs to be implemented.
+******************************[03]******************************
+A functional interface is an interface that can contain __________  default methods. Select all right options. Select one or more:
+
+a. none of the options
+b. necessarily at least one
+[CORRECT]c. more than one
+[CORRECT]d. one
+[CORRECT]e. no
+******************************[04]******************************
+What is Function in Java 8? Select one:
+
+a. None of above
+b. Steram
+[CORRECT]c. Interface
+d. Method
+e. Lambda
+******************************[05]******************************
+Which of the following is the correct lambda expressions that return the product of two arguments?
+Select one or more:
+
+a. x, y -> x * y;
+[CORRECT]b. (int x, int y) -> { return x * y; }
+[CORRECT]c. (x, y) -> { return x * y; }
+d. (x, y) ->  return x * y;
+e. ( ) -> { return x * y; }
+[CORRECT]f. (x, y) -> x * y; 
+******************************[06]******************************
+Which of the following is true for the arguments in lambda expressions?
+Select one:
+
+a. Types of the arguments are mandatory
+[CORRECT]b. Types of the arguments can be omitted
+c. At least one argument must have the datatype specified
+d. All of the above
+******************************[07]******************************
+Which of the following can be used to create a lambda that accepts one argument and returns a result?
+Select one or more:
+
+[CORRECT]a. Function
+[CORRECT]b. Predicate
+c. Binary operator
+[CORRECT]d. UnaryOperator
+e. Supplier
+f. Consumer
+******************************[08]******************************
+Which of the following can be used to create a lambda that accepts an integer and returns nothing? Select one:
+
+a. Supplier
+b. Predicate
+[CORRECT]c. Consumer
+d. Function
+******************************[09]******************************
+In java 8, R apply(T t) is a method of
+Select one:
+
+a. Predicate
+b. Consumer
+c. Process
+[CORRECT]d. Function
+******************************[10]******************************
+What is Predicate in Java 8? Select one:
+
+a. Function
+[CORRECT]b. Interface
+c. Steram
+d. Lambda
+e. None of above
+****************************************************************

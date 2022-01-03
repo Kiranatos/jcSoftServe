@@ -1,0 +1,19 @@
+my team's project:
+	exception-m7-s17-team-2-5
+	(source: modified mentor project from 18 sprint https://github.com/online-marathon/JOM_Securuty)
+
+Useful links:
+	https://terasolunaorg.github.io/guideline/5.3.0.RELEASE/en/ArchitectureInDetail/WebApplicationDetail/ExceptionHandling.html
+	https://www.baeldung.com/exception-handling-for-rest-with-spring
+	https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/mvc.html#mvc-ann-rest-spring-mvc-exceptions
+	https://www.journaldev.com/2651/spring-mvc-exception-handling-controlleradvice-exceptionhandler-handlerexceptionresolver#:~:text=Spring%20MVC%20Framework%20provides%20following,takes%20Exception%20class%20as%20argument.
+	https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
+	https://terasolunaorg.github.io/guideline/5.0.x/en/ArchitectureInDetail/ExceptionHandling.html
+	
+Alien howework from github:
+	https://github.com/bbogdasha/java-online-marathon/tree/master/sprint16/exception-s16-team-4-1
+2
+	https://github.com/JuliaBorovets/spring-exceptions
+
+	https://github.com/NazarZhyvchyn/java-online-marathon/tree/master/sprint17
+	[FullProject up to 18 sprint] https://github.com/NazariyStruk/ToDoListPetProject

@@ -1,0 +1,13 @@
+my team's project:
+	servlets-jsp-m7-s11-team-2-5
+
+parallel team's project:
+	servlets-jsp-m7-s11-team-1-1
+
+Mentor's project. Dropped in discord "ToDoListWebApp-master.zip":
+	ToDoListWebApp
+
+Useful links:
+    https://www.baeldung.com/tag/servlet/
+    https://www.javatpoint.com/servlet-tutorial
+    https://metanit.com/java/javaee/1.1.php

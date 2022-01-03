@@ -1,0 +1,28 @@
+mentor's projects from video:
+	SpringIocAnnotation
+	SpringIocXML
+
+my team's project:
+	spring-ioc-m7-s12-team-2-5
+
+Useful links:
+    https://docs.spring.io/spring/docs/current/spring-framework-reference/
+    https://www.baeldung.com/spring-classpathxmlapplicationcontext
+    https://www.tutorialspoint.com/spring/spring_ioc_containers.htm
+    https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/beans.html
+    https://www.springbyexample.org/examples/intro-to-ioc-basic-setter-injection.html
+    https://www.springbyexample.org/examples/intro-to-ioc-reference-injection.html
+    https://www.springbyexample.org/examples/intro-to-ioc-creating-a-spring-application.html
+    https://www.javatpoint.com/ioc-container
+    https://www.codeflow.site/ru/article/spring-classpathxmlapplicationcontext
+    https://spring-projects.ru/projects/spring-framework/
+    https://proselyte.net/tutorials/spring-tutorial-full-version/
+    https://javarush.ru/groups/posts/497-zavoevanie-spring-boot
+    https://www.codeflow.site/ru/article/inversion-control-and-dependency-injection-in-spring
+    https://sysout.ru/rabota-s-ioc-kontejnerom-v-spring/
+    https://proselyte.net/tutorials/spring-tutorial-full-version/ioc-containers/
+    https://o7planning.org/ru/11545/spring-boot-and-thymeleaf-tutorial
+    https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-writing-assertions-with-junit-5-api/
+    https://www.baeldung.com/junit-assertions
+    https://howtodoinjava.com/junit5/junit-5-assertions-examples/
+    https://dev.to/martinbelev/how-to-enable-junit-5-in-new-spring-boot-project-29a8

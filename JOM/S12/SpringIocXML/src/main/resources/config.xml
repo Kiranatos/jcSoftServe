@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="digitalService" scope="prototype"
+		class="com.softserve.edu.service.impl.DigitalServiceImpl" />
+
+	<bean id="resOperation" scope="singleton"
+		class="com.softserve.edu.service.impl.ResOperationService">
+		<constructor-arg ref="digitalService" />
+	</bean>
+	
+	<bean id="subOperation" scope="prototype"
+		class="com.softserve.edu.service.impl.SubOperationService">
+		<constructor-arg ref="digitalService" />
+	</bean>
+
+	<bean id="orderService"
+		class="com.softserve.edu.service.impl.OrderServiceImpl">
+		<property name="digitalService" ref="digitalService" />
+	</bean>
+
+	<bean id="convertServise"
+		class="com.softserve.edu.service.impl.ConvertServiseImpl"
+		factory-method="getConvertServise" />
+
+	<bean id="euclideanService"
+		class="com.softserve.edu.service.impl.EuclideanServiceImpl">
+		<constructor-arg ref="resOperation" />
+		<property name="convertServise" ref="convertServise" />
+		<property name="orderService" ref="orderService" />
+	</bean>
+
+</beans>

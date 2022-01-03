@@ -1,0 +1,130 @@
+9. Annotations
+
+******************************[01]******************************
+What is the output of following code?
+@Retention(RåtentionPolicy.RUNTIME)
+@interface Anno{
+    int value() defàult 15;
+}
+public class Test {
+    @Anno(10)
+    public static vîid tåst(int i) { }
+    publ³c stàtic void main(String [] args) {
+        Method m = new Test().getClass().getMethod("test");
+        Anno anno = m.gåtAnnotation(Ànno.class);
+        System.out.println(annî.value());
+    }
+}
+Select one:
+
+[CORRECT]a. Compilation error
+[EXPLANATION]Method Class.getMethod() can throw checked exception NoSuchMethodException.
+b. Runtime Exception
+c. 10
+d. 5
+e. 15
+******************************[02]******************************
+Which of the following is a benefit from using @override annotation ?
+Select one:
+
+a. Override annotation says that the method marked must be overriden by subclass
+b. It helps in runtime to dynamic binding the method to appropriate object
+[CORRECT]c. Compiler can warn you if the method desingated with override is not a correct override
+******************************[03]******************************
+If no Retention annotation is present, the retention policy defaults to RetentionPolicy.RUNTIME.
+Select one:
+
+True
+[CORRECT]False 
+******************************[04]******************************
+If a Target meta-annotation is not present the declared type used on ElementType.TYPE.
+Select one:
+
+True
+[CORRECT]False 
+******************************[05]******************************
+Was there any annotation or similar functionality existing prior to 1.5 of Java ?
+Select one:
+
+True
+[CORRECT]False 
+******************************[06]******************************
+Which of the following are the valid retention policy type available in Java ?
+Select one or more:
+
+[CORRECT]a. RUNTIME
+[CORRECT]b. SOURCE
+[CORRECT]c. CLASS
+d. CODE
+e. TOOLS
+******************************[07]******************************
+Which of the following retention policy and the type that defines @override ?
+Select one:
+
+a. TYPE, CLASS
+b. CLASS, METHOD
+c. CLASS, TYPE
+[CORRECT]d. SOURCE, METHOD
+******************************[08]******************************
+Which of the following are predefined annotations in Java?
+Select one or more:
+
+a. @Retention
+[CORRECT]b. @Deprecated
+[CORRECT]c. @SuppressWarnings
+d. @Documented
+[CORRECT]e. @Override
+******************************[09]******************************
+Which of the following way is a valid annotation definition ?
+Select one:
+
+a. public @annotation MyAnnotation{}
+b. public @MyAnnotation{}
+[CORRECT]c. public @interface MyAnnotation{}
+d. private @interface MyAnnotation{}
+******************************[10]******************************
+Annotations can be applied to local variables.
+Select one:
+
+[CORRECT]True
+False 
+******************************[11]******************************
+Annotations which are applied to other annotations are called meta annotations.
+Select one:
+
+[CORRECT]True
+False 
+******************************[12]******************************
+Annotation type definition looks similar to which of the following?
+Select one:
+
+a. Class
+b. Method
+c. Field
+[CORRECT]d. Interface
+******************************[13]******************************
+Which of the following are meta-annotations in Java?
+Select one or more:
+
+a. @Deprecated
+[CORRECT]b. @Documented
+[CORRECT]c. @Target
+[CORRECT]d. @Inherited
+******************************[14]******************************
+What can be returned from an annotation method declaration?
+Select one or more:
+
+[CORRECT]a. Enum
+b. Object
+[CORRECT]c. String
+[CORRECT]d. Class
+e. void
+******************************[15]******************************
+Which of the following symbol is used to represent an annotation ?
+Select one:
+
+a. &
+[CORRECT]b. @
+c. #
+d. $
+****************************************************************

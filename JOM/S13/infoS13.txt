@@ -1,0 +1,19 @@
+﻿my team's project:
+hibernate-1-m7-s13-team-2-6 (не рабочий)
+
+Useful links:
+https://www.tutorialspoint.com/hibernate/hibernate_caching.htm
+https://www.baeldung.com/hibernate-second-level-cache
+https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa
+https://www.objectdb.com/java/jpa/query/jpql/structure
+https://www.javatpoint.com/spring-boot-jpa
+https://www.baeldung.com/spring-data-derived-queries
+
+Alien howework from github:
+https://github.com/bbogdasha/java-online-marathon/tree/master/sprint13/hibernate-1-s13-team-4-8
+
+https://github.com/inspirationGift/todolist
+
+https://github.com/OleksandrDoskaliuk/hibernate-1-second-attempt
+https://github.com/JuliaBorovets/hibernate-1
+

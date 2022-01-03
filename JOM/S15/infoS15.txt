@@ -1,0 +1,19 @@
+my team's project:
+	mvc-m7-s15-team-2-3
+	(I modified from https://github.com/Sanverik/ToDoSample DataBase:H2, port:8090)
+
+
+
+Useful links:
+    https://spring.io/projects/spring-boot
+    https://www.baeldung.com/spring-boot-start
+    https://spring.io/guides/gs/serving-web-content/
+    https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html#integrating-thymeleaf-with-spring
+    https://www.tutorialspoint.com/spring_boot/spring_boot_thymeleaf.htm
+    https://www.baeldung.com/spring-request-param
+	
+Alien howework from github:
+https://github.com/bbogdasha/java-online-marathon/tree/master/sprint15/mvc-s15-team-4-1
+https://github.com/Sanverik/ToDoSample
+https://github.com/JuliaBorovets/spring-mvc
+https://github.com/Zhidish/Spring_project

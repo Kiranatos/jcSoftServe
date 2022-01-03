@@ -1,0 +1,127 @@
+12. Introduction to Spring IoC.
+
+******************************[01]******************************
+IOC or Dependency injection is a
+Select one or more:
+
+a. Framework
+b. Java Module
+[CORRECT]c. Design Pattern
+d. ORM Framework
+******************************[02]******************************
+What types of Dependency injection does Spring supports?
+Select one or more:
+
+[CORRECT]a. Constructor based, Setter based
+b. Constructor based, Setter based, Getter Based
+c. Setter based, Getter based, Properties based
+d. Constructor based, Setter based, Properties based
+******************************[03]******************************
+Which are the IoC containers in Spring?
+Select one or more:
+
+a. BeanFactory, ApplicationContext, BeanContext
+b. BeanFactory, BeanContext, IocContextFactory
+[CORRECT]c. BeanFactory, ApplicationContext
+d. BeanFactory, ApplicationContext, IocContextFactory
+******************************[04]******************************
+Which of the following is not a module in Spring Framework ?
+Select one or more:
+
+a. ORM
+[CORRECT]b. JEE
+[CORRECT]c. DAO
+[CORRECT]d. IOC
+******************************[05]******************************
+SpEL is part of Core container.
+Select one or more:
+
+[CORRECT]a. True
+b. False
+******************************[06]******************************
+A bean must have id attribute in beans configuration file.
+Select one or more:
+
+a. True
+[CORRECT]b. False
+******************************[07]******************************
+How to use ref keyword in beans xml?
+Select one or more:
+
+[CORRECT]a. Using setter method and constructor argument both.
+b. Using setter method only.
+c. Using constructor argument only.
+d. None of the above.
+******************************[08]******************************
+Beans defined in spring framework are by default
+Select one or more:
+
+a. abstract
+b. initialized
+c. final
+[CORRECT]d. singleton
+******************************[09]******************************
+Which of the following is true?
+Select one or more:
+
+[CORRECT]a. ApplicationContext extends BeanFactory
+b. BeanFactory implements ApplicationContext
+c. BeanFactory extends ApplicationContext
+d. ApplicationContext implements BeanFactory
+******************************[10]******************************
+How many beans SubOperationService will be created
+<bean ide="subOperation" scope="prototype" class="com.softserve.edu.service.impl.SubOperationService"></bean>
+<bean id="euclideanService" class="com.softserve.edu.service.impl.EuclideanServiceImpl">
+	<constructor-arg ref="subOperation" />
+</bean> 
+Select one or more:
+
+[CORRECT]a. One
+b. Compile error
+c. Runtime error
+d. Two
+******************************[11]******************************
+What will be the result of the following code?
+@Configuration
+public class CarServise {
+	private CarServise() { ... }
+	@Bean
+	public static CarServise getCarServise() {
+		return new CarServise();
+	}}
+Select one or more:
+
+[CORRECT]a. Runtime error
+b. Compile error
+c. Bean CarServise will be created
+d. CarServise will not be created
+******************************[12]******************************
+What will be the result of the following code?
+@Component
+public class Car {
+	@Lookup
+	public Passenger createPassenger() {
+		return null;
+	};
+	public String drive(String name) {
+		Passenger passenger = createPassenger();
+		passenger.setName(name);
+		...
+	}
+}
+@Component
+@Scope("prototype")
+public class Passenger {
+	private String name;
+	public void setName(String name) {
+		this.name = name;
+	}
+	...
+}
+Select one or more:
+
+[CORRECT]a. Beans Car and Passenger will be created
+b. Bean Passenger will be created only
+c. Bean Car will be created only
+d. Runtime error
+****************************************************************

@@ -1,0 +1,27 @@
+my team's project:
+	hibernate_2-m7-s14-team-2-7
+
+My Experiments:
+	S14Demo01SpringBootCommandLineRunner
+	S14Demo02ProjectNotWorking
+		(from https://www.stackchief.com/blog/Quick%20Start%20%7C%20Spring%20Data%20JPA)
+	S14Demo03SpringJavaRush
+		(from
+		https://javarush.ru/groups/posts/3099-spring-ehto-ne-strashno--ili-kak-zadatjh-vopros-bd
+		https://javarush.ru/groups/posts/3092-spring-ehto-nestrashno
+		https://javarush.ru/groups/posts/3093-spring-ehto-nestrashno-ili-kak-podkljuchitjh-bazu-dannihkh-dlja-studencheskogo-proekta-za-5-min
+		https://javarush.ru/groups/posts/3094-spring-ehto-nestrashno-ili-kak-napolnitjh-h2-bazu-dannihkh-i-nemnogo-hibernate		
+		)
+	це в мене не вийшло:
+	https://betacode.net/11897/spring-boot-and-spring-data-jpa
+	https://www.javatpoint.com/spring-boot-starter-data-jpa
+
+Useful links:
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.repositories
+https://howtodoinjava.com/hibernate/use-hibernate-initialize-to-initialize-proxycollection/
+https://docs.jboss.org/hibernate/entitymanager/3.5/reference/en/html/querycriteria.html
+https://docs.jboss.org/hibernate/orm/5.0/userguide/html_single/Hibernate_User_Guide.html#criteria
+https://www.baeldung.com/hibernate-criteria-queries
+https://thorben-janssen.com/dto-projections/
+https://thorben-janssen.com/query-complex-jpa-hibernate/#Free_ebook_Native_Queries_with_Hibernate
+https://vladmihalcea.com/the-best-way-to-handle-the-lazyinitializationexception/

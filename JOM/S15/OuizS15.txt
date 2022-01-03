@@ -1,0 +1,99 @@
+15. Spring MVC
+
+******************************[01]******************************
+Which elements are not components of Spring MVC? (select two options)
+
+a. DispatcherServlet
+b. ViewResolver
+[CORRECT]c. IoC
+d. HandlerMapping
+[CORRECT]e. Repository
+******************************[02]******************************
+Which object is used in Spring MVC by a request processing method to check validation failure?
+
+[CORRECT]a. BindingResult
+b. ViewResolver
+c. ExceptionHandler
+d. Validation
+e. Checker 
+******************************[03]******************************
+Which of the following is not a component of the Spring framework? (select two items)
+
+a. AOP
+[CORRECT]b. HTML/JSP
+c. Spring MVC
+d. IoC
+[CORRECT]e. Thymeleaf
+******************************[04]******************************
+An annotation @RequestMapping
+
+a. is used to map web requests onto specific handler classes
+b. can be applied to the controller classes
+c. can be applied to the controller methods
+d. is used to map web request onto specific handler method
+[CORRECT]e. all of above
+******************************[05]******************************
+Which of the following is true for Controllers in Spring?
+
+a. A concrete class
+b. An abstract class
+[CORRECT]c. An interface
+d. A bean
+e. None of above
+******************************[06]******************************
+Which component is used to map a request to a method of a controller?
+
+a. RequestParameter
+[CORRECT]b. RequestMapping
+c. None of above
+d. PathVariables
+e. RequestResolver
+******************************[07]******************************
+An annotation @Controller usually is used in
+
+a. Request layer
+b. Service layer
+c. DAO layer
+d. Repository layer
+[CORRECT]e. Presentation layer
+******************************[08]******************************
+To apply custom validation, which of the following interface need to be implemented?
+
+a. Validation
+b. Required
+c. NotNull
+[CORRECT]d. Validator
+e. not af above
+******************************[09]******************************
+Which class represents the IoC container?
+
+a. ServletContext
+b. MVC
+c. ViewResolver
+d. DispatcherServlet
+[CORRECT]e. ApplicationContext
+******************************[10]******************************
+When a bean has scope limited to HTTP session, that is called
+
+[CORRECT]a. Session scope
+b. Request scope
+c. Page scope
+d. Application scope
+e. None of above
+******************************[11]******************************
+Which annotation is used to receive a model object initialized by the request parameters, in a request processing method?
+
+a. none of above
+b. @RequestParam
+c. @PathVariable
+d. @PathParam
+[CORRECT]e. @ModelAttribute
+******************************[12]******************************
+Which of the following component intercepts all requests in a Spring MVC application?
+
+[CORRECT]a. DispatcherServlet
+b. RequestMapping
+c. None of above
+d. Controller
+e. FilterRequest
+****************************************************************

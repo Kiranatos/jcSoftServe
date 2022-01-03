@@ -1,0 +1,77 @@
+11. Quiz. JavaEE. Servlets.
+
+******************************[01]******************************
+What is Java Servlet?
+
+a. None of the above
+b. The Web server that processes http or https request
+c. The functional stream processing API for communicate with server side
+d. The Java software Component  that extends the capabilities of a Server
+[CORRECT]e. The Java class that represents a connection between a client program and a server program
+******************************[02]******************************
+What is javax.servlet.http.HttpServlet?
+
+a. Concreate class
+b. Interface
+c. Annotation
+[CORRECT]d. Abstract class
+******************************[03]******************************
+Which of the following code is used to get PrintWriter object in Servlet?
+
+a. session.getWriter()
+b. new PrintWriter()
+[CORRECT]c. response.getWriter()
+d. request.getWriter()
+******************************[04]******************************
+Which annotation helps specify one or more URL patterns of the Servlet?
+
+a. @RequestParams
+b. @WebContent
+[CORRECT]c. @WebServlet
+d. @ServletMapping
+e. @HttpServlet
+******************************[05]******************************
+What is main difference between GET and POST methods in HTTP protocol?
+
+a. They are identical and do the same thing
+[CORRECT]b. The GET method carries request parameter appended in URL string while POST method carries request parameter in message body
+c. The GET method used only for retrieving a data and cannot sending a data to server
+d. The GET method carries request parameter in message body while POST method carries request parameter appended in URL string
+e. The POST method used only for sending a data and not expect responce from server
+******************************[06]******************************
+In which folder we can put web.xml file?
+
+a. lib
+b. webapp
+c. property
+[CORRECT]d. WEB-INF
+e. class
+******************************[07]******************************
+In Java EE the web.xml file has name:
+
+a. Deployment artifact
+b. Web config
+c. None of above
+[CORRECT]d. Deployment descriptor
+e. Web initializer
+******************************[08]******************************
+Which method redirect to resources to different Servlets internally without sending a new request?
+
+a. printWriter()
+b. recive()
+[CORRECT]c. forward()
+d. serve()
+e. sendRedirect()
+******************************[09]******************************
+Which is the Servlet life-cycle procedure?
+
+class loading => constructor call => init() => service() => destroy()
+******************************[10]******************************
+When we are sending data in URL in GET method, how to separate path and parameter?
+
+[CORRECT]a. By '&' character
+b. By comma separator
+c. By '#' character
+d. By '?' character
+e. By ':' character
+****************************************************************

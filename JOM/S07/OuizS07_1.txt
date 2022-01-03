@@ -1,0 +1,198 @@
+7. Date and Time. I/O Streams
+
+******************************[01]******************************
+Which statements are true about Date class from java.util package?
+Select one or more:
+
+[CORRECT]a. It is not internationalizable and not reflect UTC
+b. It is internationalizable and reflect UTC
+c. It is immutable, thread-safe
+[CORRECT]d. It represents an instant, not a date
+[CORRECT]e. It is mutable, not thread-safe
+******************************[02]******************************
+Which of the following correctly creates an instance of Date class?
+Select one or more:
+
+a. Date date = System.currentTimeMillis();
+b. Date date = Date.of(275647648484L);
+c. Date date = Date.now();
+[CORRECT]d. Date date = new Date(275647648484L);
+[CORRECT]e. Date date = new Date();
+******************************[03]******************************
+The instance of Date class contains:
+Select one:
+
+a. The number of milliseconds  that have elapsed since midnight, January 1, 1900
+b. The number of seconds  that have elapsed since midnight, January 1, 1970
+c. The string that represents given date and time
+[CORRECT]d. The number of milliseconds  that have elapsed since midnight, January 1, 1970
+e. The number of seconds  that have elapsed since midnight, January 1, 1900
+******************************[04]******************************
+What will be the output of the following program?
+import java.util.*;
+class Main {
+	public static void main(String[] args) {
+		Calendar calendar = GregorianCalendar.getInstance();
+		calendar.set(Calendar.YEAR, 2017);
+		calendar.set(Calendar.MONTH, 12);
+		calendar.set(Calendar.DAY_OF_MONTH, 8);
+		System.out.print(calendar.get(Calendar.DAY_OF_MONTH) + ".");
+		System.out.print(calendar.get(Calendar.MONTH) + ".");
+		System.out.print(calendar.get(Calendar.YEAR));
+	} }
+Select one:
+
+[CORRECT]a. 8.0.2018
+b. 08.12.2017
+c. 8.12.2017
+d. Compile error
+******************************[05]******************************
+Which of the following correctly creates an instance of LocalDateTime class?
+Select one or more:
+
+a. LocalDateTime dateTime = LocalDateTime.of(2017, Month.NOVEMBER, 8);
+[CORRECT]b. LocalDateTime dateTime = LocalDateTime.of(2017, Month.NOVEMBER, 8, 15, 38)
+[CORRECT]c. LocalDateTime dateTime = LocalDateTime.now();
+d. LocalDateTime dateTime = new LocalDateTime();
+e. LocalDateTime dateTime = new LocalDateTime(2017, Month.NOVEMBER, 8, 15, 38);
+******************************[06]******************************
+What will be the output of the following program?
+import java.time.*;
+class Main {
+	public static void main(String[] args) {
+		LocalDate date = LocalDate.of(2017, Month.NOVEMBER, 8);
+		date.plusYears(2).plusMonths(3).plusDays(4);
+		System.out.println(date);
+	} }
+Select one:
+
+[CORRECT]a. 2017-11-08
+b. Runtime error
+c. 2020-02-12
+d. 61468236000000
+e. Compile error
+******************************[07]******************************
+What will be the output of the following program?
+import java.time.*;
+import java.time.temporal.ChronoUnit;
+class Main {
+	public static void main(String[] args) {
+		LocalDate date = LocalDate.of(2017, Month.NOVEMBER, 8);
+		date = date.plus(48, ChronoUnit.HOURS);
+		System.out.println(date);
+	} }
+Select one:
+
+a. 61468236000000
+b. 2017-11-08
+c. 2017-11-10
+[CORRECT]d. Runtime error
+e. Compile error
+******************************[08]******************************
+What will be the output of the following program?
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+class Main {
+	public static void main(String[] args) {
+		LocalDateTime localDateTime = LocalDateTime.of(2017, Month.NOVEMBER, 8, 15, 38);
+		String dateTime = localDateTime.format(
+			DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM));
+		System.out.println(dateTime);
+	} }
+Select one:
+
+a. Runtime error
+b. 11/8/17, 3:38 PM
+c. Compile error
+[CORRECT]d. Nov 8, 2017, 3:38:00 PM
+e. 2017-11-08T15:38
+******************************[09]******************************
+The LocalDateTime class from java.time package is immutable, thread-safe and correspond to ISO 8601 standard. Select one:
+
+[CORRECT]True
+False 
+******************************[10]******************************
+What will be the output of the following program?
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+class Main {
+	public static void main(String[] args) {
+		LocalDateTime dateTime = LocalDateTime.of(2017, 11, 26, 15, 38);
+		Period period = Period.ofYears(1).ofMonths(2).ofDays(3);
+		dateTime = dateTime.minus(period);
+		System.out.println(dateTime);
+} }
+Select one:
+
+a. 2016-09-23T15:38
+b. Runtime error
+c. Compile errror
+d. 2017-11-26T15:38
+[CORRECT]e. 2017-11-23T15:38
+******************************[11]******************************
+Which of these classes is used for input and output operation when working with bytes?
+Select one or more:
+
+a. Reader
+[CORRECT]b. OutputStream
+c. Writer
+d. All of the mentioned
+[CORRECT]e. InputStream
+******************************[12]******************************
+Which of these classes is used for input and output operation when working with characters?
+Select one or more:
+
+[CORRECT]a. Reader
+[CORRECT]b. Writer
+c. All of the mentioned
+d. InputStream
+e. OutputStream
+******************************[13]******************************
+Which of these is a method to clear all the data present in output buffers?
+Select one:
+
+[CORRECT]a. flush()
+b. clear()
+c. refresh()
+d. close()
+******************************[14]******************************
+What will be the result of executing the following program?
+import java.io.*;
+class Main {
+	public static void main(String[] args) throws I0Exception {
+		String text = "abc";
+		byte[] data = text.getBytes();
+		OutputStream outputStream = new FileOutputStream("data.txt");
+		for (int i = 0; i < 3; i++) { outputStream.write(data); }
+		outputStream.close();
+	} }
+Select one:
+
+a. Will be created empty file 'data.txt'
+b. The line 'abc' will be written in file 'data.txt'
+[CORRECT]c. The line 'abcabcabc' will be written in file 'data.txt'
+d. The line '979899' will be written in file 'data.txt'
+e. Compile error
+f. Runtime error
+g. The line '979899979899979899' will be written in file 'data.txt'
+******************************[15]******************************
+Suppose we have the next text file: data.txt with text:"abc"
+What will be the output of the following program?
+import java.io.*;
+class Main {
+	public static void main(String[] args) throws I0Exception {
+		int character;
+		InputStream inputStream = new FileInputStream("data.txt");
+		while ((character = inputStream.read()) != null) {
+			System.out.print((char) character);
+		} } }
+Select one:
+
+a. Print to console 'abc\n'
+b. Print to console 'abc'
+c. Runtime error
+d. Print to console '979899'
+[CORRECT]e. Compile error
+****************************************************************

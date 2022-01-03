@@ -1,0 +1,29 @@
+mentor's project from video:
+	Sprint18b
+
+Useful links:
+	https://spring.io/guides/gs/rest-service/
+    https://spring.io/guides/tutorials/rest/
+    https://www.tutorialspoint.com/spring_boot/spring_boot_building_restful_web_services.htm
+    https://dzone.com/articles/spring-boot-restful-web-service-complete-example
+    https://www.archetypesoftware.com/blog/blog-guide-develop-restful-spring-boot-with-plus
+    http://zetcode.com/springboot/restcontroller/
+    https://habr.com/ru/post/435144/
+    https://spring-projects.ru/guides/rest-service/
+    https://javarush.ru/groups/posts/2488-obzor-rest-chastjh-3-sozdanie-restful-servisa-na-spring-boot
+    https://o7planning.org/ru/11645/crud-restful-web-service-with-spring-boot-example
+    https://sysout.ru/spring-boot-rest-api/
+    https://devmark.ru/article/spring-boot-object-to-json
+    https://o7planning.org/ru/11649/secure-spring-boot-restful-service-using-basic-authentication
+    https://spring-projects.ru/guides/tutorials-bookmarks/
+    https://howtodoinjava.com/spring-boot2/security-rest-basic-auth-example/
+    https://www.codeflow.site/ru/article/authentication-against-a-third-party-service
+    https://blog.softtek.com/en/token-based-api-authentication-with-spring-and-jwt
+    https://habr.com/ru/post/278411/
+    https://www.marcobehler.com/guides/spring-security
+    https://dzone.com/articles/spring-boot-security-json-web-tokenjwt-hello-world
+    https://sysout.ru/primer-prilozheniya-s-jwt-tokenom/
+    https://curl.haxx.se/windows/
+    https://curl.haxx.se/docs/httpscripting.html
+    https://curl.haxx.se/docs/manpage.html
+    https://flaviocopes.com/http-curl/

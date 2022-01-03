@@ -1,0 +1,24 @@
+my team's project:
+	spring-security-m7-s18-team-2-3
+	(source: modified project from https://github.com/NazariyStruk/ToDoListPetProject)
+
+mentor's final project:
+	To-Do-List-Project
+	(source: https://github.com/demchyna/To-Do-List-Project)
+
+Useful links:
+    https://spring.io/projects/spring-security
+    https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/
+    https://docs.spring.io/spring-security/site/docs/5.0.16.RELEASE/guides/html5/helloworld-boot.html
+    https://www.baeldung.com/spring-boot-security-autoconfiguration
+    https://www.baeldung.com/category/spring/tag/authentication/
+    https://www.thymeleaf.org/doc/articles/springsecurity.html
+    https://programmer.ink/think/spring-boot-spring-security-thymeleaf-simple-tutorial.html
+    https://reflectoring.io/spring-security-password-handling/
+    https://www.browserling.com/tools/bcrypt
+    http://www.allitebooks.org/spring-in-action-4th-edition/
+	
+Alien howework from github:
+	https://github.com/rjone10/ToDo-list-app
+	https://github.com/NazariyStruk/ToDoListPetProject
+	https://github.com/bbogdasha/java-online-marathon/tree/master/sprint18/spring-security-s18-team-4-4

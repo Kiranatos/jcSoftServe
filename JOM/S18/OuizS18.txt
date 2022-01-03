@@ -1,0 +1,84 @@
+18. Spring Security
+
+******************************[01]******************************
+The Spring Security framework provides solutions
+Select one:
+
+[CORRECT]a. for authentication and authorisation process
+b. none of above
+c. only for authentication process
+d. only for authorisation process
+******************************[02]******************************
+Which annotation is used for integration Spring Security with Spring MVC?
+Select one:
+
+a. @EnableGlobalMethodSecurity
+[CORRECT]b. @EnableWebSecurity
+c. @EnableSpringSecurity
+d. @Secured
+e. @Configuration
+******************************[03]******************************
+To customize login and logout processes we need
+Select one:
+
+a. implement AuthenticationManager interface and then override the commence(...) method
+[CORRECT]b. extend WebSecurityConfigurerAdapter class and then override the configure(...) method
+c. implement AuthenticationManager interface and then override the authenticate(...) method
+d. extend AbstractAuthenticationFilterConfigurer class and then override the customize(...) method
+******************************[04]******************************
+Which URL used by default for automatically generating a login page?
+Select one:
+
+a. /login-page
+[CORRECT]b. /login
+c. /form-login
+d. /authenticate
+e. /login-form
+******************************[05]******************************
+Which URL and http method used by default for logout process?
+Select one:
+
+a. URL "/logout" and http method GET
+b. URL "/close" and http method POST
+c. URL "/close" and http method GET
+d. URL "/exit" and http method POST
+[CORRECT]e. URL "/logout" and http method POST
+******************************[06]******************************
+In Spring Security CSRF protection is disabled by default.
+Select one:
+
+True
+[CORRECT]False 
+******************************[07]******************************
+For storing the details of who is authenticated in the Spring Security used
+Select one:
+
+a. ProviderManager
+b. UsernamePasswordAuthenticationToken
+c. UserDetailsService
+[CORRECT]d. SecurityContextHolder
+******************************[08]******************************
+The most common implementation of AuthenticationManager is
+Select one:
+
+a. AuthenticationManagerBuilder
+b. SecurityContextHolder
+c. UserDetailsService
+[CORRECT]d. ProviderManager
+******************************[09]******************************
+Which method from UserDetailsService interface used for accepts a String-based username argument and returns a UserDetails object?
+Select one:
+
+a. loadUserFromHolder(...)
+b. withUsername(...)
+[CORRECT]c. loadUserByUsername(...)
+d. getUserByName(...)
+******************************[10]******************************
+For the enable annotation-based security using annotation
+Select one:
+
+a. @PreAuthorizeIt
+b. @PostAuthorize
+c. @Secured
+[CORRECT]d. @EnableGlobalMethodSecurity
+****************************************************************

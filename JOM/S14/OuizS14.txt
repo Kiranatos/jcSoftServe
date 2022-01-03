@@ -1,0 +1,60 @@
+14. ORM. Hibernate. Part 2
+
+******************************[01]******************************
+Which property is used to enable auto commit for JDBC pooled connections?
+
+[CORRECT]a. hibernate.connection.autocommit
+b. hibernate.hbm2ddl.auto
+******************************[02]******************************
+Which of the following is not a core component of Hibernate?
+
+a. Configuration
+[CORRECT]b. JDBC
+c. SessionFactory
+d. Session
+******************************[03]******************************
+org.hibernate.cfg.Configuration can be used for all configuration and no need of XML. 
+
+[CORRECT]True
+False 
+******************************[04]******************************
+Which of the following is true about HQL?
+
+[CORRECT]a. HQL is a Object Oriented Query language
+[CORRECT]b. HQL takes java objects in the same way as SQL takes tables
+c. HQL is type-safe
+[CORRECT]d. HQL is database independent
+******************************[05]******************************
+Child objects are not loaded when parent is loaded/populated from database. What this technique is called?
+
+a. Eager Loading
+[CORRECT]b. Lazy Loading
+c. Request based Loading
+d. None of the above
+******************************[06]******************************
+Hibernate defines and supports the following object states:
+
+[CORRECT]a. Transient, Persistent, Detached
+b. New, Running, Death
+c. New, Persistent, Death
+d. Transient, Stable, Removed
+******************************[07]******************************
+It is necessary to use only hibernate.cfg.xml for configuration in hibernate.
+
+True
+[CORRECT]False 
+******************************[08]******************************
+Transient and detached objects in hibernate are:
+
+a. Instances of persistent class that are not currently associated with session.
+b. Instances of persistent class which are in session.
+******************************[09]******************************
+While creating SessionFactory in hibernate, which design pattern should be adopted? Answer: 
+
+Singleton
+******************************[10]******************************
+Hibernate and JPA are two different implementations of ORM. 
+
+[CORRECT]True
+False 
+****************************************************************

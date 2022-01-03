@@ -1,0 +1,144 @@
+8. Multithreading
+
+******************************[01]******************************
+true = Threads can be created in two ways: implementing Runnable interface or extending Thread class
+false = The Runnable interface defines methods run(), start() and other
+true = Thread class provide constructors and methods to create and perform operations on a thread
+false = start() method of Thread class can be used to restart an existing thread
+******************************[02]******************************
+What is the order of the output of the following java code fragment?
+class ThreadDemo implements Runnable { 
+	int x = 0, y = 0;
+	int addX() { x++; return x; }
+	int addY() { y++; return y; }
+	public void run() {
+		for(int i = 0; i < 10; i++)
+			System.out.println( Thread.currentThread().getName() + ": " + addX() + " " + addY());
+	}
+	public static void main(String args[]) {
+		ThreadDemo obj1 = new ThreadDemo();
+		ThreadDemo obj2 = new ThreadDemo();
+		Thread t1 = new Thread(obj1);
+		Thread t2 = new Thread(obj2);
+		t1.start();
+		t2.start();
+	} }
+Select one:
+
+a. Compile time Error: There is no start() method.
+b. None of these.
+c. Will print in this order: 1 1 2 2 3 3 4 4 5 5...
+[CORRECT]d. Will print but may or may not be in an order for Thread t1 and t2 (e.g: 1 1 2 2 1 1 3 3... up to 10 10)
+e. Will print in this order: 1 2 3 4 5 6... 1 2 3 4 5 6...
+******************************[03]******************************
+What will be the output of the java program below?
+public class App {
+	public static void main(String [] args) {
+		System.out.print("1 ");
+		synchronized(args) {
+			System.out.print("2 ");
+			try {
+				args.wait(); /* Line 11 */
+			} catch(InterruptedException e) { }
+		}
+		System.out.print("3 ");
+	} }
+Select one:
+
+a. 1 2 3
+b. None of these
+c. It fails to compile because the IllegalMonitorStateException of wait() is not dealt with in line 11.
+[CORRECT]d. 1 2
+e. 1 3
+******************************[04]******************************
+Which of the following piece of code will create and start this thread?
+class MyRunnable implements Runnable {
+	public void run() { /* some code here */ } }
+Select one:
+
+a. new MyRunnable().start();
+b. None of these.
+c. new Thread(MyRunnable).run();
+[CORRECT]d. new Thread(new MyRunnable()).start();
+e. new Runnable(MyRunnable).start();
+******************************[05]******************************
+What is the output of the below Java code?
+class ThreadDemo implements Runnable {
+	String x, y;
+	public void run() {
+		for(int i = 0; i < 10; i++)
+			synchronized(this) {
+				x = "Hello";
+				y = "Java";
+				System.out.print(x + " " + y + " ");
+			}
+	}
+	public static void main(String args[]) {
+		ThreadDemo run = new ThreadDemo ();
+		Thread obj1 = new Thread(run);
+		Thread obj2 = new Thread(run);
+		obj1.start();
+		obj2.start();
+	}
+}
+Select one:
+
+a. DeadLock.
+[CORRECT]b. It will print “Hello Java” …. 20 times for obj1 and obj2.
+c. None of these.
+d. Compilation Error.
+******************************[06]******************************
+What will be the output of the following Java code?
+class App extends Thread {
+	public static void main(String [] args) {
+		App t = new App();
+		t.start();
+		System.out.print("one. ");
+		t.start();
+		System.out.print("two. ");
+	}
+	public void run() {
+		System.out.print("Thread ");
+	} }
+Select one:
+
+a. It prints "Thread one. Thread two.".
+b. None of these.
+c. The output cannot be determined.
+d. Compilation fails.
+[CORRECT]e. An exception occurs at runtime.
+******************************[07]******************************
+Which method must be defined by a class implementing the java.lang.Runnable interface?
+Select one:
+
+[CORRECT]a. public void run()
+b. public void start()
+c. void run()
+d. None of these
+******************************[08]******************************
+Method isAlive() = is used to find out that a thread is still running.
+Method join() = waits until the thread on which it is called terminates.
+Method run() = is used to implement Runnable interface.
+******************************[09]******************************
+The synchronized keyword can be used to
+Select one or more:
+
+a. Inner class
+b. Method parameters
+[CORRECT]c. Static methods
+[CORRECT]d. Code blocks
+e. Local variables
+[CORRECT]f. Instance methods
+******************************[10]******************************
+Which of the following methods are the methods of Thread class?
+Select one or more:
+
+void notify()
+[CORRECT]void start()
+[CORRECT]void setDaemon(boolean on)
+[CORRECT]boolean isAlive()
+void send()
+void wait()
+[CORRECT]void yield()
+[CORRECT]void join()
+****************************************************************

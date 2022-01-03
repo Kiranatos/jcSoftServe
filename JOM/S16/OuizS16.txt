@@ -1,0 +1,74 @@
+16. Unit Testing and Logging
+
+******************************[01]******************************
+log4j has three main component:
+
+layouts - Responsible for formatting logging information in different styles.
+appenders - Responsible for publishing logging information to various preferred destinations.	
+loggers - Responsible for capturing logging information.
+******************************[02]******************************
+Choose testing frameworks, which you may use in Java. Select one or more:
+
+a. MSTest
+[CORRECT]b. JUnit
+c. PyTest
+[CORRECT]d. TestNG
+******************************[03]******************************
+Is log4j thread safe? Select one:
+
+[CORRECT]True
+False 
+******************************[04]******************************
+log4j log levels include next levels: Select one or more:
+
+a. FINE
+b. WARNING
+[CORRECT]c. INFO
+[CORRECT]d. DEBUG
+[CORRECT]e. ERROR
+[CORRECT]f. TRACE
+******************************[05]******************************
+A collection of unit tests is called: Select one:
+
+a. A collection
+b. An array
+c. An Assertion set
+[CORRECT]d. A suite
+******************************[06]******************************
+Unit testing – Select one:
+
+[CORRECT]a. a test level that focuses on individual hardware or software components.
+b. a test level that focuses on interactions between components or systems.
+c. a test level that focuses on determining whether to accept the system.
+d. a test level that focuses on verifying that a system as a whole meets specified requirements.
+******************************[07]******************************
+In JUnit5 Annotation @AfterAll denotes that the annotated method should be executed … Select one:
+
+a. before all @Test, @RepeatedTest, @ParameterizedTest, and @TestFactory methods in the current class
+[CORRECT]b. after all @Test, @RepeatedTest, @ParameterizedTest, and @TestFactory methods in the current class
+c. before each @Test, @RepeatedTest, @ParameterizedTest, or @TestFactory method in the current class
+d. after each @Test, @RepeatedTest, @ParameterizedTest, or @TestFactory method in the current class
+******************************[08]******************************
+Choice correct answer. In JUnit 5 Test Classes ... Select one or more:
+
+a. can have more then one constructor
+b. can be abstract
+[CORRECT]c. must not be abstract
+[CORRECT]d. must have a single constructor
+******************************[09]******************************
+Match methods and their description:
+
+assertEquals(expected, actual) - Assert that expected and actual are equal.
+assertSame(expected, actual) - Assert that expected and actual refer to the same object.
+assertNull(actual) - Assert that actual is null.
+assertArrayEquals(expected, actual) - Assert that expected and actual arrays are equal.
+******************************[10]******************************
+In JUnit5 Annotation @BeforeEach denotes that the annotated method should be executed ... Select one:
+
+[CORRECT]a. before each @Test, @RepeatedTest, @ParameterizedTest, or @TestFactory method in the current class.
+b. after all @Test, @RepeatedTest, @ParameterizedTest, and @TestFactory methods in the current class.
+c. after each @Test, @RepeatedTest, @ParameterizedTest, or @TestFactory method in the current class.
+d. before all @Test, @RepeatedTest, @ParameterizedTest, and @TestFactory methods in the current class.
+****************************************************************
+
+

@@ -1,0 +1,27 @@
+my team's project:
+	spring-junit-log-m7-s16-team-2-5
+mentor's project from video:
+	marathon
+
+Useful links:
+    https://www.baeldung.com/spring-boot-testing
+    https://reflectoring.io/unit-testing-spring-boot/
+    https://www.baeldung.com/java-spring-mockito-mock-mockbean
+    https://www.baeldung.com/mockito-mock-methods
+    https://junit.org/junit5/
+    https://junit.org/junit4/
+    https://testng.org/doc/
+    https://www.baeldung.com/spring-boot-logging
+    https://www.loggly.com/ultimate-guide/java-logging-basics/
+    https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-logging
+    https://www.tutorialspoint.com/log4j/log4j_overview.htm
+	
+Alien howework from github:
+	https://github.com/bbogdasha/java-online-marathon/tree/master/sprint17/spring-junit-log-s17-team-4-6
+
+	https://github.com/JuliaBorovets/spring-junit-log
+
+	https://github.com/NazarZhyvchyn/java-online-marathon/tree/master/sprint16
+
+
+	[FullProject up to 18 sprint] https://github.com/NazariyStruk/ToDoListPetProject

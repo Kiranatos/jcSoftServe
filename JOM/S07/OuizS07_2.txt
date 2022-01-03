@@ -1,0 +1,323 @@
+07. Stream API.
+
+******************************[01]******************************
+What will be the result of the following code?
+int sum = Arrays.stream(new int[] { 1, 2, 3, 4 })
+	.limit(3)
+	.filter(i -> i > 20)
+	.map(i -> i * 2)
+	.sum();
+System.out.print(sum);
+Select one or more:
+
+a. 14
+b. 18
+c. 6
+d. 20
+[CORRECT]e. 0
+******************************[02]******************************
+What will be the result of the following code?
+int sum = Arrays.stream(new int[] { 1, 2, 3, 4 })
+	.limit(3)
+	.filter(i -> i > 2)
+	.map(i -> i * 2)
+	.sum();
+System.out.print(sum);
+Select one or more:
+
+a. 0
+b. 18
+c. 20
+d. 14
+[CORRECT]e. 6
+******************************[03]******************************
+What will be the result of the following code?
+int sum = Arrays.stream(new int[] { 1, 2, 3, 4 })
+	.map(i -> i * 2)
+	.filter(i -> i > 2)
+	.limit(2)
+	.sum();
+System.out.print(sum);
+Select one or more:
+
+a. 18
+b. 0
+[CORRECT]c. 10
+d. 14
+e. 20
+******************************[04]******************************
+What will be the result of the following code?
+List<List<String>> table = new ArrayList<>();
+table.add(Arrays.asList("1", "2", "3"));
+table.add(Arrays.asList("4", "5"));
+table.stream()
+	.map(list -> list.stream())
+	.skip(1)
+	.forEach(stream -> stream.forEach(System.out::print));
+Select one or more:
+
+a. Compile Error
+b. 2345
+c. 12345
+d. 123
+[CORRECT]e. 45
+******************************[05]******************************
+What will be the result of the following code?
+List<List<String>> table = new ArrayList<>();
+table.add(Arrays.asList("1", "2", "3"));
+table.add(Arrays.asList("4", "5"));
+table.stream()
+	.flatMap(Collection::stream)
+	.skip(1)
+	.forEach(System.out::print);
+Select one or more:
+
+a. 12345
+b. 45
+[CORRECT]c. 2345
+d. Compile Error
+e. 123
+******************************[06]******************************
+What will be the result of the following code?
+List<List<String>> table = new ArrayList<>();
+table.add(Arrays.asList("1", "2", "3"));
+table.add(Arrays.asList("4", "5"));
+table.stream()
+	.limit(1)
+	.flatMap(Collection::stream)
+	.forEach(System.out::print);
+Select one or more:
+
+a. 2345
+b. 45
+c. Compile Error
+[CORRECT]d. 123
+e. 12345
+******************************[07]******************************
+What will be the result of the following code?
+Stream.of(2, 3, 0, 1)
+	.map(num -> IntStream.range(0, num))
+	.forEach(stream -> stream.forEach(System.out::print));
+Select one or more:
+
+a. Compile Error
+b. 2301
+[CORRECT]c. 010120
+d. 0123
+e. 0120123001
+******************************[08]******************************
+What will be the result of the following code?
+Stream.of(2, 3, 0, 1)
+	.flatMapToInt(x -> IntStream.range(0, x))
+	.forEach(System.out::print);
+Select one or more:
+
+a. 0120123001
+[CORRECT]b. 010120
+c. Compile Error
+d. 2301
+e. 0123
+******************************[09]******************************
+What will be the result of the following code?
+DoubleStream.of((int)0, 1)
+	.boxed()
+	.map(Object::getClass)
+	.forEach(System.out::print);
+Select one or more:
+
+a. Integer Integer
+b. Compile Error
+[CORRECT]c. Double Double
+d. Integer Double
+e. Double Integer
+******************************[10]******************************
+What will be the result of the following code?
+Stream.concat(
+		DoubleStream.of(1).boxed(),
+		IntStream.of(2).boxed())
+	.map(Object::getClass)
+	.forEach(System.out::print);
+Select one or more:
+
+a. Compile Error
+b. Double Double
+c. Integer Double
+[CORRECT]d. Double Integer
+e. Integer Integer
+******************************[11]******************************
+What will be the result of the following code?
+String[] array = { "ab", "bad", "ab", "abc"};
+Arrays.stream(array)
+	.map(s -> s.split(""))
+	.flatMap(Arrays::stream)
+	.distinct()
+	.collect(Collectors.toList())
+	.forEach(System.out::print);
+Select one or more:
+
+a. abbadabc
+b. Compile Error
+[CORRECT]c. abdc
+d. abbadababc
+e. abcd
+******************************[12]******************************
+What will be the result of the following code?
+Stream.of(
+		Stream.of(1, 2, 3, 4, 5)
+			.sorted(Comparator.reverseOrder())
+			.limit(4)
+			.reduce(0, (acc, x) -> acc + x),
+	0)
+	.forEach(System.out::print); 
+Select one or more:
+
+a. 14
+b. 150
+c. 15
+[CORRECT]d. 140
+e. Compile Error
+******************************[13]******************************
+What will be the result of the following code?
+Stream.of(1, 12, 2, 3, 2, 21)
+	.filter(x -> x > 1)
+	.map(x -> String.valueOf(x))
+	.collect(Collectors.toCollection(TreeSet::new))
+	.forEach(System.out::print); 
+Select one or more:
+
+[CORRECT]a. 122213
+b. 122321
+c. 231221
+d. 211232
+e. Compile Error
+******************************[14]******************************
+What will be the result of the following code?
+Random random = new Random();
+System.out.println(
+	Stream.generate(() -> random.nextInt(7))
+		.limit(4)
+		.max(Comparator.naturaLOrder())
+		.orElse(6));
+Select one or more:
+
+[CORRECT]a. 4
+b. Compile Error
+[CORRECT]c. 6
+[CORRECT]d. 5
+e. 7
+******************************[15]******************************
+What will be the result of the following code?
+System.out.println(
+	Stream.iterate(0, x -> x + 3)
+		.limit(4)
+		.map(x -> String.valueOf(x))
+		.collect(Collectors.joining(", ")));
+Select one or more:
+
+a. 12, 9, 6, 3
+b. Compile Error
+c. 3, 6, 9, 12
+[CORRECT]d. 0, 3, 6, 9
+e. 9, 6, 3, 0
+******************************[16]******************************
+What will be the result of the following code?
+System.out.println(
+	Stream.of(3, 2, 1)
+		.peek(x -> System.out.print(x))
+		.reduce((acc, x) -> acc + x)
+		.orElse(0));
+Select one or more:
+
+a. 6321
+b. 3210
+c. Compile Error
+[CORRECT]d. 3216
+e. 0321
+******************************[17]******************************
+Select the correct statements. Select one or more:
+
+[CORRECT]a. Stream doesn't contains elements
+b. Collection doesn't contains elements
+[CORRECT]c. Collection contains elements
+d. Stream contains elements
+******************************[18]******************************
+Select the correct statements. Select one or more:
+
+a. Change made on Stream  make changes on the original Collection
+b. Any change made on Collection doesn't reflect on the original Collection
+[CORRECT]c. Change made on Collection make changes on the original Collection
+[CORRECT]d. Any change made on Stream doesn't reflect on the original Collection
+******************************[19]******************************
+Select the correct statements. Select one or more:
+
+[CORRECT]a. Intermediate operations are lazy
+[CORRECT]b. Terminal operations terminate the pipeline and initiate stream processing
+[CORRECT]c. Intermediate operations return Stream itself
+d. Terminal operations are lazy
+[CORRECT]e. Intermediate operations are only triggered when a terminal operation exists
+******************************[20]******************************
+Select the correct statements. Select one or more:
+
+a. flatMap is Terminal stream operations
+[CORRECT]b. map is intermediate stream operations
+[CORRECT]c. flatMap operation return a stream
+[CORRECT]d. flatMap is intermediate stream operations
+e. map operation return simple value
+******************************[21]******************************
+Select Intermediate operations. Select one or more:
+
+a. collect()
+[CORRECT]b. boxed()
+[CORRECT]c. filter()
+d. forEach()
+[CORRECT]e. peek()
+******************************[22]******************************
+Select Terminal operations. Select one or more:
+
+[CORRECT]a. forEach()
+b. peek()
+c. boxed()
+d. filter()
+[CORRECT]e. collect()
+******************************[23]******************************
+How to convert the array String[] count = {"One", "Two", "Three"}; to Stream
+Select one or more:
+
+[CORRECT]a. Stream<String> numbers = Arrays.stream(count);
+b. Stream<String> numbers = Stream.concat(count);
+c. Stream<String> numbers = count.stream();
+[CORRECT]d. Stream<String> numbers = Stream.of(count);
+e. Stream<String> numbers = ArrayStream.of(count);
+******************************[24]******************************
+How to convert full Map<String, Integer> someMap; to Stream. Select one or more:
+
+a. Stream<Integer> valuesStream = someMap.values().stream();
+b. Stream<Map.Entry<String, Integer>> entriesStream = Stream.of(someMap);
+c. Stream<String> keysStream = someMap.keySet().stream();
+[CORRECT]d. Stream<Map.Entry<String, Integer>> entriesStream = someMap.entrySet().stream();
+e. Stream<Map.Entry<String, Integer>> entriesStream = someMap.stream();
+******************************[25]******************************
+How to convert the String number = "123456789"; to Stream. Select one or more:
+
+a. Stream<Integer> numbers = number.chars();
+[CORRECT]b. IntStream numbers = number.chars();
+[CORRECT]c. Stream<Integer> numbers = number.chars().boxed();
+[CORRECT]d. IntStream numbers = number.codePoints();
+e. Stream<Character> numbers = number.chars();
+******************************[26]******************************
+How to convert the elements a1, a2, a3 to Stream. Select one or more:
+
+[CORRECT]a. Stream<Object> numbers = Stream.builder().add(a1).add(a2).add(a3).build();
+b. Stream<Object> numbers = Arrays.stream(a1, a2, a3);
+[CORRECT]c. Stream<Object> numbers = Stream.of(a1, a2, a3);
+d. Stream<Object> numbers = Stream.generate(a1, a2, a3);
+e. Stream<Object> numbers = Stream.concat(a1, a2, a3);
+******************************[27]******************************
+Select methods of Collectors class. Select one or more:
+
+[CORRECT]a. groupingBy();
+b. supplier();
+[CORRECT]c. toCollection();
+[CORRECT]d. toSet();
+[CORRECT]e. toList();
+****************************************************************
